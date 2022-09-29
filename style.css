@@ -1,0 +1,326 @@
+/* importing the Monserrat font for easy access */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap');
+
+/* =======apply to all  starts ========== */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+/*========= apply to all ends  ===============*/
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+section {
+    padding: 5rem 9%;
+}
+.heading {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 5rem;
+    text-align: left;
+}
+/* reusable */
+/*========== header ========*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 5rem;
+    display: flex;
+    align-items: center;
+    /* z-index: 100; */
+}
+.header .navbar a {
+    font-size: 1.7rem;
+    color: var(--white);
+    /* margin-left: 3rem; */
+}
+/*========header end =========*/
+
+/* ========navbar css starts ======*/
+.logo-image img {
+    width: 15rem;
+    height: 7rem;
+    float: left;
+    margin-left: 15rem;
+    margin-top: 2rem;
+    overflow: auto;
+}
+/* ========navbar container css ========== */
+.container {
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+    padding-left: 80rem;
+}
+.navbar {
+   
+    position: fixed;
+    background: white;
+    color: #000;
+    display: flex;
+    width: 100%;
+}
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    /* float:right; */
+}
+.nav-items {
+    order: 2;
+    display: flex;
+}
+/* =========navbar related css ends =======*/
+.logo {
+    order: 1;
+    font-size: 2.3rem;
+}
+.nav-items li {
+    list-style: none;
+    margin-left: 1.5rem;
+    font-size: 1.3rem;
+}
+.navbar a {
+    color: #444;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+    display: block;
+}
+.navbar a:hover {
+    color: #117964;
+}
+
+
+/* =========== home starts ======== */
+.home {
+    padding-top: 10rem;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(rgba(27, 27, 27, 0.6), rgba(27, 27, 27, 0.6)), url('../img/Hero-Section.png');
+    margin-top: 100px;
+    margin-bottom: 10rem;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 63rem;
+}
+.home h1 {
+    font-size: 6rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    color: var(--white);
+}
+.home p {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    text-transform: none;
+    color: var(--white);
+}
+/* ========  home css ends here==========*/
+/*========== buttons css starts here =========*/
+.button {
+    background-color: #af150a;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+button:hover {
+    background: rgb(105, 36, 36);
+    border: 2px solid rgb(153, 0, 0);
+    color: rgb(255, 248, 248);
+}
+/*  ============ button css ends here =============*/
+.about .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+}
+.about .box-container .box p {
+    font-size: 1.7rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    color: var(--light-color);
+    text-transform: none;
+}
+/*================ grid css starts here==========*/
+.lorem{
+    font-size: 40px;
+}
+.grid-container {
+    margin-left: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    grid-gap: 6rem;
+    padding: 100px 300px;
+}
+
+
+.location-title, .location-title2, .location-title3,
+.location-title4, .location-title5, .location-title6 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 350px;
+    /* typographic styles */
+    color: white;
+    font-size: 3em;
+    font-weight: bolboldder;
+    text-decoration: none;
+    /* position the text centrally*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.location-title2 {
+    background-image: linear-gradient(rgba(27, 27, 27, 0.6), rgba(27, 27, 27, 0.6)), url('../img/Img-1.png');
+}
+.location-title3 {
+    background-image: linear-gradient(rgba(27, 27, 27, 0.6), rgba(27, 27, 27, 0.6)), url('../img/Img-2.png');
+}
+.location-title4 {
+    background-image: linear-gradient(rgba(27, 27, 27, 0.6), rgba(27, 27, 27, 0.6)), url('../img/Img-3.png');
+}
+.location-title5 {
+    background-image: linear-gradient(rgba(27, 27, 27, 0.6), rgba(27, 27, 27, 0.6)), url('../img/Img-3.png');
+}
+.location-title6 {
+    background-image: linear-gradient(rgba(27, 27, 27, 0.6), rgba(27, 27, 27, 0.6)), url('../img/Img-5.png');
+}
+.location-title {
+    background-image: linear-gradient(rgba(27, 27, 27, 0.6), rgba(27, 27, 27, 0.6)), url('../img/Img-6.png');
+}
+/*=========== end of grid-images ===========*/
+/*=========== customer section css starts here ============= */
+.cards h1 {
+    margin-bottom: -50px;
+font-size:x-large
+}
+.cards-container {
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(152, 235, 230);
+    margin-bottom: -100px;
+    padding: 100px;
+    padding-left: 20rem;
+}
+.card {
+    padding: 3px;
+    width: 280px;
+    background-color: white;
+    border: 0px solid #eee;
+    text-align: center;
+    display: inline-block;
+    margin-top: 100px;
+    /* box-shadow: -1px 1px 8px rgba(0, 0, 0, 0.53); */
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 10rem;
+}
+.card h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.card span {
+    margin: 20px 0px;
+    display: inline-block;
+    color: rgb(216, 9, 9);
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: small;
+}
+.card p {
+    margin-bottom: 20px;
+    font-size: 15px
+}
+.card a {
+    font-size: 20px
+}
+/* =======customer review page  css ends here =========*/
+/*============footer starts===========*/
+footer {
+    background-color: black;
+    border-top: 1px solid #6EB981;
+    font-size: 17px;
+    padding: 5rem 5px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: -50px;
+}
+/*=======footer ends===========*/
+/*========== media queries============= */
+@media (max-width: 1200px) {
+    .header {
+        padding: 2rem;
+    }
+    .header.active {
+        padding: 2rem;
+    }
+    section {
+        padding: 3rem 2rem;
+    }
+    .home h1 {
+        font-size: 5rem;
+    }
+}
+@media (max-width: 991px) {
+    html {
+        font-size: 60%;
+    }
+}
+@media (max-width: 768px) {
+    .header .menu {
+        display: block;
+    }
+    .header .navbar {
+        position: fixed;
+        top: 6.4rem;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        transform: translateX(100%);
+    }
+    .box-container {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+}
+/* ========== end of media queries ============ */
